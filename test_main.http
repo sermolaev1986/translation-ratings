@@ -1,0 +1,15 @@
+# Test your FastAPI endpoints
+###
+
+POST http://127.0.0.1:8000/ratings
+Accept: application/json
+Content-Type: application/json
+
+{
+    "source_language": "",
+    "target_language": "",
+    "translation_id": "",
+    "rating": 1
+}
+
+###

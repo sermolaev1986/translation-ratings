@@ -1,0 +1,13 @@
+version: '1'
+services:
+  ratings-app:
+    build: .
+    container_name: ratings-app
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: host.docker.internal
+      DB_PORT: 5432
+      DB_NAME: ratings-db
+      DB_USER: ratings-user
+      DB_PASSWORD: ratings-password

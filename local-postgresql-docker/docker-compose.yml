@@ -1,0 +1,11 @@
+version: '1'
+services:
+  database:
+    build: .
+    container_name: local-ratings-postgres-database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ratings-user
+      POSTGRES_PASSWORD: ratings-password
+      POSTGRES_DB: ratings-db
